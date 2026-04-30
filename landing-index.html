@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NikzCodes Calculators</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0f1117; color: #e8eaed;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 40px 20px;
+  }
+  .container { max-width: 600px; width: 100%; }
+  h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .sub { font-size: 15px; color: #8b8fa3; margin-bottom: 40px; line-height: 1.5; }
+  .card {
+    background: #181b24; border: 1px solid #2a2e3b; border-radius: 14px;
+    padding: 24px; margin-bottom: 16px;
+    text-decoration: none; color: #e8eaed; display: block;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .card:hover { border-color: #6c63ff; transform: translateY(-2px); }
+  .card-title { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+  .card-desc { font-size: 13px; color: #8b8fa3; line-height: 1.5; }
+  .badge {
+    display: inline-block; font-family: 'Space Mono', monospace;
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.1em; padding: 4px 8px; border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .live { background: rgba(34,197,94,0.15); color: #22c55e; }
+  .soon { background: rgba(108,99,255,0.15); color: #6c63ff; }
+  .footer { margin-top: 40px; font-size: 12px; color: #555a6e; font-family: 'Space Mono', monospace; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Calculators</h1>
+  <p class="sub">Free business & finance calculators by NikzCodes</p>
+
+  <a href="./ams-retainer/" class="card">
+    <span class="badge live">Live</span>
+    <div class="card-title">AMS Retainer Cost Calculator</div>
+    <div class="card-desc">Calculate agency retainer pricing with base fee + variable component based on incremental ad sales and TACoS efficiency. Built for Zewa Feeds.</div>
+  </a>
+
+  <div class="card" style="opacity: 0.5; cursor: default;">
+    <span class="badge soon">Coming Soon</span>
+    <div class="card-title">EMI Calculator</div>
+    <div class="card-desc">Loan EMI calculator with amortization schedule, prepayment modeling, and comparison charts.</div>
+  </div>
+
+  <div class="footer">github.com/NikzCodes/calculators</div>
+</div>
+</body>
+</html>
